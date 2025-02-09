@@ -1,0 +1,9 @@
+p {
+  /* color: olive; */
+  color: #ff0000;
+}
+
+a,
+tr {
+  color: red;
+}
