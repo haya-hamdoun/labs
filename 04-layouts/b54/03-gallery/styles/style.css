@@ -1,0 +1,18 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+  margin: 2em;
+}
+
+main figure {
+  border: black solid 1px;
+  border-radius: 2em;
+  padding: 1em;
+  margin: 0;
+}
+
+main figure img {
+  width: 100%;
+  height: auto;
+}
