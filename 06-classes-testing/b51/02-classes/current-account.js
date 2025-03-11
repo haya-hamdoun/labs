@@ -34,6 +34,10 @@ export class CurrentAccount extends BankAccount {
   // method(obj) {
   //   obj.#fee;
   // }
+
+  abstractMethod() {
+    console.log("implemented");
+  }
 }
 
 // export { CurrentAccount };

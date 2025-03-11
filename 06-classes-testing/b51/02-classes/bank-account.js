@@ -5,6 +5,10 @@ export class BankAccount {
   #balance;
 
   constructor(account) {
+    if (this.constructor === BankAccount) {
+      throw "cannot instantiate abstract class";
+    }
+
     this.#id = account?.id ?? BankAccount.#generateId();
     this.#balance = account?.balance ?? 0.0;
   }
@@ -39,4 +43,10 @@ export class BankAccount {
   static #generateId() {
     return nanoid();
   }
+
+  abstractMethod() {
+    throw "abstract method not implemented";
+  }
+
+  // abstractMethod: null
 }
