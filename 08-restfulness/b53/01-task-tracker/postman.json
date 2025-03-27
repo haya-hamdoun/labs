@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d2970a8f-3640-4920-b605-75d525a80b65",
+		"name": "Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8340285"
+	},
+	"item": [
+		{
+			"name": "tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tasks",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tasks",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tasks/:id",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tasks",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tasks/:id",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tasks",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tasks/:id",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tasks",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	]
+}

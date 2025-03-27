@@ -1,0 +1,19 @@
+{
+  "name": "01-task-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "nanoid": "^5.1.5",
+    "next": "15.2.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4"
+  }
+}
