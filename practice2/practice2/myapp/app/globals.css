@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.department {
+  border: 1px solid #999;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.department-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.department-header code {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: normal;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.employee span {
+  margin-right: auto;
+}
+
+.status {
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.9em;
+  margin-right: 8px;
+  border: 1px solid;
+}
+
+.status.available {
+  color: green;
+  border-color: green;
+}
+
+.status.away {
+  color: #b58900;
+  border-color: #b58900;
+}
+
+.remove-button {
+  background: none;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #900;
+  text-decoration: line-through;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.create-button {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.95em;
+}
