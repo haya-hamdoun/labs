@@ -1,0 +1,25 @@
+to install Next.js:
+npx create-next-app@latest --app --javascript --tailwind --eslint --turbopack --no-src-dir --import-alias "@/*"
+
+to run the next app:
+npm run dev
+
+to install prisma and initialize it with sql:
+npm install --save-dev prisma
+npx prisma init --datasource-provider sqlite --output ./client
+
+after we create the models, we should create the tables using this command:
+npx prisma migrate dev --name init
+
+to check the tables:
+npx prisma studio
+
+to install lucide:
+npm install lucide-react
+
+"prisma": {
+    "seed": "node prisma/seed.mjs"
+  }
+
+
+  

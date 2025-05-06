@@ -5,6 +5,8 @@ import { upsertEmployee } from '@/repos/employees';
 import { redirect } from 'next/navigation';
 import prisma from '@/repos/prisma';
 
+
+
 export async function getAvailableCountByDepartment() {
   const departments = await prisma.department.findMany({
     include: {
